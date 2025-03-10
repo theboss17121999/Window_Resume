@@ -8,6 +8,7 @@ export default {
     extend: {
       fontSize:{
         datetimesz:'0.7rem',
+        giticontb:'1.7rem'
       }
     },
   },

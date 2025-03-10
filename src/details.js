@@ -1,0 +1,1 @@
+export const github = "https://github.com/theboss17121999";
