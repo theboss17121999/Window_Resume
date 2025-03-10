@@ -32,12 +32,18 @@ function TimeAndDate() {
     }, []);
 
     return (
-        <div className="text-black text-datetimesz text-right border-black">
-            <div>{currentTime.toLocaleTimeString([], { hour: "2-digit", minute: "2-digit" })}</div>
+        <div className="text-black text-datetimesz text-right border-black grid grid-cols-2">
+            <div className="pr-2 flex flex-col items-center text-center">
+                <span>ENG</span>
+                <span>IN</span>
+            </div>
             <div>
-                {currentTime.getDate().toString().padStart(2, "0")}-
-                {(currentTime.getMonth() + 1).toString().padStart(2, "0")}-
-                {currentTime.getFullYear()}
+                <div>{currentTime.toLocaleTimeString([], { hour: "2-digit", minute: "2-digit" })}</div>
+                <div>
+                    {currentTime.getDate().toString().padStart(2, "0")}-
+                    {(currentTime.getMonth() + 1).toString().padStart(2, "0")}-
+                    {currentTime.getFullYear()}
+                </div>
             </div>
         </div>
     );
