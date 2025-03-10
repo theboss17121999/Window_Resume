@@ -35,7 +35,7 @@ function TimeAndDate() {
         <div className="text-black text-datetimesz text-right border-black grid grid-cols-2">
             <div className="pr-2 flex flex-col items-center text-center">
                 <span>ENG</span>
-                <span>IN</span>
+                <span>IND</span>
             </div>
             <div>
                 <div>{currentTime.toLocaleTimeString([], { hour: "2-digit", minute: "2-digit" })}</div>
