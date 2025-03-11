@@ -8,7 +8,7 @@ import { github } from '../../details';
 
 export const TaskBar = () => {
     return (
-        <div className="w-full absolute bottom-0 left-0 bg-gradient-to-r from-gray-100 to-gray-200 text-black grid grid-cols-3 py-1 shadow-md">
+        <div className="w-full absolute bottom-0 left-0 bg-gradient-to-r from-yellow-400 to-red-500 text-black grid grid-cols-3 py-1 shadow-md">
             <Github />
             <Appsbar />
             <div className="flex justify-end pr-4">
@@ -20,7 +20,7 @@ export const TaskBar = () => {
 
 function Github() {
     return (
-        <div className="pl-4 pt-4">
+        <div className="pl-4 pt-2">
             <a href={github} target="_blank" rel="noopener noreferrer">
                 <div className="flex items-center gap-2 hover:text-gray-600">
                     <FaGithub className="text-black text-3xl" />
@@ -73,7 +73,7 @@ function TimeAndDate() {
     }, []);
 
     return (
-        <div className="text-black text-right grid grid-cols-2 py-1">
+        <div className="text-black text-right text-[0.8rem] grid grid-cols-2 py-1">
             <div className="pr-2 flex flex-col items-center text-center">
                 <span>ENG</span>
                 <span>IN</span>

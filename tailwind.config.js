@@ -9,7 +9,10 @@ export default {
       fontSize:{
         datetimesz:'0.7rem',
         giticontb:'1.7rem'
-      }
+      },
+      backgroundImage: {
+        'desktop-wallpaper': "url('../src/assets/Background/wallpaper1.jpg')",
+      },
     },
   },
   plugins: [],
